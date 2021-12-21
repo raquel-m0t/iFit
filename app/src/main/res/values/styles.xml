@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Listado" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FF4081</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+</resources>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">iFit</string>
+    <string name="comenzar">¡Comenzar!</string>
+
+    <string name="volver">Volver al inicio</string>
+    <string name="abdomninales">Abdominales</string>
+    <string name="flexiones">Flexiones</string>
+    <string name="burpees">Burpees</string>
+    <string name="gluteos">Patada Gluteos</string>
+    <string name="triceps">Triceps</string>
+    <string name="abductor">Abductores</string>
+    <string name="puente">Puente Gluteos</string>
+    <string name="peso">Peso Muerto</string>
+    <string name="sentadillas">Sentadillas</string>
+    <string name="steps">Step Ups</string>
+    <string name="zancadas">Zancadas</string>
+    <string name="zancadas_laterales">Zancadas Laterales</string>
+    <string name="repeticiones">0</string>
+    <string name="resultado">resultado</string>
+    <string name="tiempo">Segundos (media)</string>
+    <string name="time">Tiempo</string>
+    <string name="tipo">Ejercicio</string>
+    <string name="anteriores">Historial de puntaciones anteriores</string>
+
+
+    <string name="terminar">Terminar</string>
+    <string name="pausar">Pausa</string>
+    <string name="renaudar">Renaudar</string>
+    <string name="mas">+</string>
+    <string name="menos">-</string>
+    <string name="otro">Otro ejercicio</string>
+
+    <string name="consejo_abdominales">Respira adecuadamente: inspira antes de contraer el abdomen y espira al subir.\n\nNunca tires del cuello. Si lo notas excesivamente tenso, sujeta la cabeza con ambas manos.\n\nMantén los codos separados y alejados del cuerpo durante todo el ejercicio</string>
+    <string name="consejo_abductores">Túmbate de lado, forma una línea recta con tu cuerpo. \n\nAsegúrate de que las caderas están alineadas. \n\nColoca la mano de arriba delante de ti para evitar inclinarte hacia adelante. \n\nFíjate en que el talón y los dedos del pie estén alineados durante el ejercicio</string>
+    <string name="consejo_burpees">Inspira antes de hacer la bajada de plancha. Espira una vez llegues al suelo.\n\nTensa el abdomnen durante todo el ejercicio para no sobrecargar la lumbar.\n\nMantén la columna alineada para evitar lesiones, si esto te resulta difícil al principio, puedes apoyar las rodillas</string>
+    <string name="consejo_flexiones">Las manos deben formar un triángulo con la cabeza, pero no deben estar justo debajo de los hombros.\n\nMantén la columna alineada para evitar lesiones, si esto te resulta difícil al principio, puedes apoyar las rodillas</string>
+    <string name="consejo_gluteos">Lleva la pierta hacia atrás todo lo que puedas.\n\nNo dobles la espalda, si esto te resulta difícil, busca algo para apoyarte.</string>
+    <string name="consejo_triceps">Flexiona los brazos sin separar los codos del cuerpo.\n\nIntenta no apoyarte hasta acabar para conseguir mejores resultados.</string>
+    <string name="consejo_peso">Haz calentamiento antes de empezar.\n\nMantén la espalda recta en todo momento.\n\nSe razonable al elegir el peso a levantar; es mejor incrementar poco a poco.</string>
+    <string name="consejo_puente">Túmbate boca arriba con la espalda completamente apoyada. Dobla las rodillas y coloca los pies a la altura de la cadera.\n\nEspalda glúteos y muslos deben formar una línea recta. \n\nLas rodillas no deben tocarse.</string>
+    <string name="consejo_sentadillas">Coloca los pies a la altura de los hombros, ligeramente hacia afuera.\n\n Mantén la cabeza recta y la vista fija.\n\n No dejes que las rodillas avancen por delante de los pies.</string>
+    <string name="consejo_steps">Presta atención a tu postura, para asegurarte de usar todo el cuerpo al moverte y no sobrecargar. Podrías ayudarte de un espejo.\n\nMantén los hombros hacia atrás y el cuerpo alineado.\n\nMantén las rodillas semiflexionadas.</string>
+    <string name="consejo_zancadas">Mantén el torso recto. Evita los balanceos e inclinarte hacia adelante.\n\nLa rodilla debe doblarse unos 90º.\n\nRepite la misma cantidad de zancadas en cada lado para no ejercitar de forma desigual.</string>
+    <string name="consejo_zancadas_laterales">Contrae el abdomen.\n\nPuedes inclinarte un poco, pero siempre con la espalda recta.\n\nEvita cualquier movimiento de rotación durante el ejercicio</string>
+
+
+    <string name="impresionante">¡¡IM-PRE-SIO-NANTE!!</string>
+    <string name="texto_impresionante">Has tardado una media de %1$s segundos.\nEs evidente que este ejercicio no supone ninguna dificultad para tí.\n\nIntenta incrementar el número de repeticiones.</string>
+    <string name="fenomenal">Simplemente fenomenal</string>
+    <string name="texto_fenomenal">Has tardado una media de %1$s segundos.\n¡Felicidades! Este ejercicio se te da muy bien. Intenta poco a poco subir el número de repeticiones, y descansa entre series para no lesionarte.</string>
+    <string name="bien">¡Nada Mal!</string>
+    <string name="texto_bien">Has tardado una media de %1$s segundos.\n\nTodavía hay margen para mejorar, pero lo importante es conseguirlo poco a poco.</string>
+    <string name="conseguiste">¡Lo conseguiste!</string>
+    <string name="texto_conseguiste">Has tardado una media de %1$s segundos.\nNo ha sido fácil, pero ¡lo has logrado!\n\nSi sigues así en poco tiempo verás buenos resultados.</string>
+    <string name="mal">Todos tenemos un mal día</string>
+    <string name="texto_mal">Has tardado una media de %1$s segundos.\nLo importante no es destacar siempre, sino nunca dejar de intentarlo. El éxito pertenece a los que no se rinden.</string>
+    <string name="sin_cargar">Sin cargar</string>
+    <string name="texto_sin_cargar">Sin cargar</string>
+
+</resources>
