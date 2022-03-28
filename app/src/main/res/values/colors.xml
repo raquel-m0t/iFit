@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="rojo_1">#FF5722</color>
+    <color name="rojo_1">#E1F3412A</color>
     <color name="gris_medio">#8D8A91</color>
     <color name="gris_oscuro">#555457</color>
     <color name="teal_200">#4CAF50</color>
-    <color name="teal_700">#CDDC39</color>
+    <color name="teal_700">#555457</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gris_fondo">#EAE7E7</color>

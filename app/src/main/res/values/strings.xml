@@ -1,6 +1,45 @@
 <resources>
     <string name="app_name">iFit</string>
-    <string name="comenzar">¡Comenzar!</string>
+    <string name="comenzar">¡Quiero registrarme!</string>
+    <string name="comenzar_ejercicio">¡Comenzar!</string>
+    <string name="salir">Cerrar sesión</string>
+    <string name="cerrar_app">Salir</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="acceso_dep">Soy deportista</string>
+    <string name="titulo_dep">Acceso deportistas</string>
+    <string name="acceso_ent">Soy entrenador</string>
+    <string name="titulo_ent">Acceso entrenadores</string>
+
+    <string name="acceso_seguir">Entrar</string>
+    <string name="nuevo_ejercicio">Nuevo Ejercicio</string>
+    <string name="acceso_volver">volver</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="nombre">Nombre de usuario</string>
+    <string name="codigo">Código de entrenador</string>
+    <string name="fecha">F. registro</string>
+    <string name="estatura_perfil">Estatura</string>
+    <string name="peso_perfil">Peso</string>
+    <string name="cantidad_deportistas">Nº deportistas</string>
+    <string name="especialidad_perfil">Especialidad</string>
+    <string name="editar_deportista">Editar deportistas</string>
+    <string name="borrar_perfil">Eliminar mi cuenta</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="instrucciones_entrenador">(Pulsa en el nombre para entrenar)</string>
+
+    <string name="registro_deportista">Nuevo deportista</string>
+    <string name="registro_entrenador">Nuevo entrenador</string>
+    <string name="registro_titulo">Nuevo usuario</string>
+    <string name="repetir_contraseña">Repetir contraseña</string>
+    <string name="registro_peso">Peso (ej: 53.5)</string>
+    <string name="estatura">Estatura (ej: 1.75)</string>
+    <string name="edad">Edad</string>
+    <string name="especialidad">Especialidad deportiva</string>
+    <string name="centro">Centro</string>
+    <string name="acepto">Acepto que se almacenen mis datos</string>
+    <string name="registro_aceptar">Registrarme</string>
+    <string name="miembro_desde">Miembro desde:</string>
+    <string name="id_entrenador">Id del entrenador</string>
 
     <string name="volver">Volver al inicio</string>
     <string name="abdomninales">Abdominales</string>
@@ -56,5 +95,26 @@
     <string name="texto_mal">Has tardado una media de %1$s segundos.\nLo importante no es destacar siempre, sino nunca dejar de intentarlo. El éxito pertenece a los que no se rinden.</string>
     <string name="sin_cargar">Sin cargar</string>
     <string name="texto_sin_cargar">Sin cargar</string>
+    <string name="title_activity_acceso_deportistas">AccesoDeportistas</string>
+
+    <string name="perfiles">Perfiles de deportistas</string>
+    <string name="seleccionar_perfil">Seleccionar deportista</string>
+
+    <string name="datos_entrenado">Datos del entrenado</string>
+    <string name="objetivo">Objetivo</string>
+    <string name="eliminar">Eliminar Perfil</string>
+    <string name="borrar">Borrar</string>
+    <string name="editar">Editar</string>
+
+    <string name="nuevo_entrenado">Nuevo entrenado</string>
+    <string name="editar_entrenado">Editar entrenado</string>
+    <string name="nombreEntrenado">Nombre</string>
+    <string name="guardar">Guardar</string>
+    <string name="editar_perfil">Editar mis datos</string>
+    <string name="aplicar">Aplicar</string>
+
+    <string name="first_fragment_label">Primer fragmento</string>
+    <string name="second_fragment_label">Segundo fragmento</string>
+
 
 </resources>

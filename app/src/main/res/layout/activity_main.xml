@@ -7,44 +7,66 @@
     android:background="@color/gris_fondo"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/rojo_1"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="368dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo" />
-
-    <Button
-        android:id="@+id/buttonComenzar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginBottom="222dp"
-        android:shadowColor="#817A7A"
-        android:text="@string/comenzar"
-        android:textColor="#FAFAFA"
-        android:textSize="30sp"
-        app:backgroundTint="@color/gris_medio"
+        android:layout_width="222dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="432dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/buttonRegistro"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:shadowColor="#817A7A"
+        android:text="@string/comenzar"
+        android:textColor="#FAFAFA"
+        android:textSize="30sp"
+        app:backgroundTint="@color/rojo_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#B5AFAF" />
+
+    <Button
+        android:id="@+id/buttonDeportista"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:shadowColor="#817A7A"
+        android:text="@string/acceso_dep"
+        android:textColor="#F5F5F5"
+        android:textSize="30sp"
+        app:backgroundTint="@color/gris_medio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:strokeColor="#B5AFAF" />
+
+    <Button
+        android:id="@+id/buttonEntrenador"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="77dp"
+        android:shadowColor="#817A7A"
+        android:text="@string/acceso_ent"
+        android:textColor="#FAFAFA"
+        android:textSize="30sp"
+        app:backgroundTint="@color/gris_medio"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeportista"
         app:strokeColor="#B5AFAF" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

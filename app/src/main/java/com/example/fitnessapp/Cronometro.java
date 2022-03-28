@@ -14,6 +14,10 @@ import android.os.SystemClock;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Cronometro. Esta clase consiste en un un reloj cronómetro funcional que se pone en marcha al cargar la activity.
+ * Tiene botones para gestionarlo; pausar, renaudar y terminar. Al terminar se registra en la BD los datos asociados al usuario, tiempo y actividad..
+ */
 public class Cronometro extends AppCompatActivity {
 
     public static MiBaseDatosHelper baseDatos;
@@ -22,11 +26,14 @@ public class Cronometro extends AppCompatActivity {
     Button renaudar;
 
     Double tiempo; //almacenar el tiempo resultado para pasar a la siguiente pantalla
-    int tipo; //tipo de ejercicio
+    public static int tipo; //tipo de ejercicio
     int repeticiones;
     TextView reloj;
     Handler customHandler = new Handler();
-    int sumaTiempo;
+    //int sumaTiempo;
+    Deportista deportista;
+    //Entrenador entrenador;
+    Entrenado entrenado;
 
     long startTime = 0L, timeInMilliseconds = 0L, timeSwapBuff = 0L, updateTime = 0L;
 
@@ -57,15 +64,13 @@ public class Cronometro extends AppCompatActivity {
         startTime = SystemClock.uptimeMillis();
         customHandler.postDelayed(updateTimerThread, 0);
 
-
         //crear objeto de la clase auxiliar para BD
-        baseDatos = new MiBaseDatosHelper(this, "tiempos", null, 1);
+        //baseDatos = new MiBaseDatosHelper(this, "tiempos", null, 1);
 
         //obtener tipo del intent
         tipo = (int) getIntent().getExtras().getSerializable("tipo");
         //obtener repeticiones del intent
         repeticiones = (int) getIntent().getExtras().getSerializable("numero de repeticiones");
-
 
         //parar el cronómetro al pulsar el botón
         pausar = (Button) findViewById(R.id.botonPausar);
@@ -97,6 +102,11 @@ public class Cronometro extends AppCompatActivity {
         });
     }
 
+    /**
+     * GetNombreEjercicio. Permite asociar el número de la actividad (tal como se almacena en la BD) con el nombre que le corresponde.
+     * @param tipoEjercicio
+     * @return
+     */
     public String getNombreEjercicio(int tipoEjercicio) {
         String nombreEjercicio;
         //determinar texto para cada tipo
@@ -150,20 +160,46 @@ public class Cronometro extends AppCompatActivity {
         return resultado;
     }
 
+    /**
+     * Este método determina si el usuario es deportista o entrenador y así llama al método correspondiente en la BD para registrar los datos de la actividad realizada
+     * @param nombreEjercicio
+     * @param tiempoMedio
+     */
     public void insertarRegistro(String nombreEjercicio, double tiempoMedio) {
-        //abrir la base de datos en modo lectura/escritura
-        SQLiteDatabase bd = baseDatos.getWritableDatabase();
-        //insertar datos
-        try {
-            ContentValues miRegistro = new ContentValues();
-            miRegistro.put("ejercicio", nombreEjercicio);
-            miRegistro.put("tiempo", tiempoMedio);
-            //crear consulta insert
-            bd.insert("tiempos", null, miRegistro);
 
-        } catch (Exception e) {
-            Toast.makeText(this, "No se han podido registrar los datos", Toast.LENGTH_SHORT).show();
+        //usuario entrenador
+        if (AccesoEntrenadores.codigoEntrenador != null) {
+            String idEntrenado = AdapterEntrenados.idEntrenado;
+            entrenado = AccesoEntrenadores.baseDatos.obtenerDatosEntrenado(idEntrenado);
+            String idEntrenador = AccesoEntrenadores.baseDatos.obtenerIdEntrenador(AccesoEntrenadores.codigoEntrenador);
+            //guardar actividad en BD
+            try {
+                AccesoEntrenadores.baseDatos.registrarEjercicioEntrenado(tipo, idEntrenador, idEntrenado, tiempoMedio, repeticiones);
+            } catch (Exception e) {
+                Toast.makeText(this, "No se han podido registrar los datos", Toast.LENGTH_SHORT).show();
+                System.out.println(e);
+            }
+
+        } else {
+            //usuario deportista
+            if (AccesoDeportistas.nombreUsuario != null) {
+                //obtener id deportista para registrar en BD
+                //obtener datos del usuario de la BD para completar los demás datos del perfil
+                deportista = new Deportista();
+                String nombre=AccesoDeportistas.nombreUsuario;
+                deportista = AccesoDeportistas.baseDatos.obtenerDatosDeportista(nombre);
+                //guardar actividad en BD
+                try {
+                    String id = deportista.id;
+                    AccesoDeportistas.baseDatos.registrarEjercicioDeportista(tipo, id, tiempoMedio, repeticiones);
+                } catch (Exception e) {
+                    Toast.makeText(this, "No se han podido registrar los datos", Toast.LENGTH_SHORT).show();
+                    System.out.println(e);
+                }
+            } else {
+                Toast.makeText(this, "Error al determinar el tipo de usuario", Toast.LENGTH_SHORT).show();
+            }
         }
-        Toast.makeText(this, "Datos registrados correctamente", Toast.LENGTH_SHORT).show();
+
     }
 }

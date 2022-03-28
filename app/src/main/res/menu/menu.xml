@@ -9,13 +9,20 @@
     android:layout_marginRight="376dp"
     android:layout_marginBottom="674dp">
 
-
-    <item
-        android:id="@+id/action_volver"
+      <item
+        android:id="@+id/action_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orderInCategory="99"
-        android:title="@string/volver" />
+        android:title="@string/ayuda"/>
+
+    <item
+        android:id="@+id/action_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orderInCategory="99"
+        android:title="@string/salir"/>
+
 
 
 </menu>

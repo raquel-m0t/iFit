@@ -7,65 +7,111 @@
     android:background="@color/gris_fondo"
     tools:context=".Cronometro">
 
-    <Button
-        android:id="@+id/botonTerminar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginEnd="115dp"
-        android:layout_marginRight="115dp"
-        android:layout_marginBottom="120dp"
-        android:text="@string/terminar"
-        android:textSize="30sp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/reloj"
-        android:layout_width="335dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
-        android:layout_marginBottom="96dp"
-        android:gravity="center"
-        android:text="TextView"
-        android:textSize="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/botonRenaudar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/botonRenaudar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginBottom="109dp"
-        android:text="@string/renaudar"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/botonTerminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonPausar" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/botonPausar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="14dp"
-        android:text="@string/pausar"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/botonRenaudar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reloj" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/reloj"
+                android:layout_width="335dp"
+                android:layout_height="108dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="75dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/botonPausar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pausar"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/botonRenaudar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/renaudar"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/botonTerminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terminar"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

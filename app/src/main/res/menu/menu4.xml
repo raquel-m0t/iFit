@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:layout_marginEnd="376dp"
+    android:layout_marginRight="376dp"
+    android:layout_marginBottom="674dp">
+
+    <item
+        android:id="@+id/action_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orderInCategory="99"
+        android:title="@string/ayuda"/>
+
+    <item
+        android:id="@+id/action_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orderInCategory="99"
+        android:title="@string/cerrar_app"/>
+
+
+</menu>
